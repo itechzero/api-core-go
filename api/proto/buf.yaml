@@ -1,0 +1,17 @@
+version: v1
+deps:
+  - buf.build/googleapis/googleapis
+  - buf.build/grpc-ecosystem/grpc-gateway
+lint:
+  use:
+    - DEFAULT
+    - COMMENTS
+  ignore_only:
+    ENUM_ZERO_VALUE_SUFFIX:
+      - analysis/v1/analysis.proto
+breaking:
+  use:
+    - FILE
+#    - PACKAGE
+#    - WIRE
+#    - WIRE_JSON
